@@ -1,0 +1,9 @@
+- El id de empleado ya esta siendo utilizado. El id tiene que ser nºrestaurante_id empleado para que no se repita con otros restaurantes
+- El horario de servicio debe contener al de apertura. Vemos que estás teniendo problema con esto Los horarios se definen para 24 horas como máximo
+Revisa los horarios, el horario de servicio tiene que ser mayor que el de apertura
+- Los intervalos no pueden estar solapados. No se pueden definir nuevos interavlos que "solapen" con los ya existentes. Revisa los intervalos ya existentes primero
+- Existen asociaciones a servicio solapadas. No se puede crear una nueva asociación ya que las fechas se solapan con alguna ya existente. Revisa las actuales y modifica las fechas para cerrar la asociación activa y crear una nueva posteriormente.
+-Las fechas del contrato solapan con alguno de los ya existentes. Las fechas no pueden solapar con los contratos existentes. Revisa los contratos actuales, debes cerrar el contrato activo primero para poder crear nuevos contratos
+service no puede estar vacío	
+- Tiene incidencias solapadas. Revisa las incidencias de este empleado, alguna coincide con otra el mismo día
+- El intervalo de disponibilidad debe estar contenido dentro de su asociación. revisa las fechas de las asociaciones, la disponibilidad que estás creando no está contenida en las fechas existentes de asociación con el restaurante
